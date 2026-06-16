@@ -1,5 +1,8 @@
 此文件夹为PULPino未拓展RISCV，借用https://gitlab.lrz.de/tueisec/post-quantum-crypto代码修改；
 
+### 注意系统环境
+本项目中使用python2.7，请确保系统中python变量指向python2.7；
+
 
 ### PULPino Platform
 下载PULPino平台代码
@@ -32,6 +35,8 @@ make
 ```
 
 完成验证后可以自己写C语言代码，请根据makefile指令所指向的路径添加文件夹及修改makefile；
+首先对COMPLIE/compile目录下的makefile进行修改，参考makefile内的示例；
+其次，编译前确认TEST目录下已自行创建对应文件夹，对应文件夹名称与makefile内指定的文件夹名称一致；
 
 
 ### Run Modelsim Simulation
